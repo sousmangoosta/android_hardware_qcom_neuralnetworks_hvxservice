@@ -40,7 +40,6 @@ static std::once_flag configure_nnlib;
 static void configureHexagon() {
     std::call_once(configure_nnlib, []() {
         hexagon::Controller::getInstance().config();
-        hexagon::Controller::getInstance().boost(100);
     });
 }
 
